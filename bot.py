@@ -3,7 +3,7 @@ import telebot
 import requests
 
 API_KEY = os.getenv('API_KEY',
-                    '7801113243:AAHYgegskiup6UaljCJh0zCyN04IzdaiGWQ')
+                    '7627695687:AAFMXIBq1O2WqnnKx5V4-JXcflNv8HWjkjk')
 IMAGE_URL = "https://i.ibb.co/5sxj6wj/KC-2.jpg"
 bot = telebot.TeleBot(API_KEY)
 
@@ -26,7 +26,7 @@ def send_welcome(message):
     data_register = {
         "username": message.from_user.first_name,
         "password": message.from_user.id,
-        "domain": 'kc24.co',
+        "domain": 'kc999.co',
         "phone": '',
         "currencyId": '3',
     }
@@ -35,7 +35,7 @@ def send_welcome(message):
         "username": message.from_user.first_name,
         "password": message.from_user.id,
         # "password": '801984912',
-        "domain": 'kc24.co',
+        "domain": 'kc999.co',
         "clientIP": get_ip(),
     }
 
@@ -59,7 +59,7 @@ def send_welcome(message):
                 parse_mode="Markdown")
             bot.send_message(chat_id,
                              f"Login: https://cc24.live?token={token}")
-            caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻  @K_C24  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
+            caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻  @KC999_CS  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
             bot.send_photo(chat_id, photo=IMAGE_URL, caption=caption)
         return
     elif response_data.get('error') == "Duplicate username!":
@@ -84,7 +84,7 @@ def send_welcome(message):
                 token = return_login['data']['token']
                 bot.send_message(chat_id,
                                  f"Login: https://cc24.live?token={token}")
-                caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @K_C24  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
+                caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @KC999_CS  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
                 bot.send_photo(chat_id, photo=IMAGE_URL, caption=caption)
 
 
@@ -94,7 +94,7 @@ def send_register(message):
     data_register = {
         "username": message.from_user.first_name,
         "password": message.from_user.id,
-        "domain": 'kc24.co',
+        "domain": 'kc999.co',
         "phone": '',
         "currencyId": '3',
     }
@@ -103,7 +103,7 @@ def send_register(message):
         "username": message.from_user.first_name,
         "password": message.from_user.id,
         # "password": '801984912',
-        "domain": 'kc24.co',
+        "domain": 'kc999.co',
         "clientIP": get_ip(),
     }
 
@@ -127,7 +127,7 @@ def send_register(message):
                 parse_mode="Markdown")
             bot.send_message(chat_id,
                              f"Login: https://cc24.live?token={token}")
-            caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻  @K_C24  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
+            caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻  @KC999_CS  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
             bot.send_photo(chat_id, photo=IMAGE_URL, caption=caption)
         return
     elif response_data.get('error') == "Duplicate username!":
@@ -152,7 +152,7 @@ def send_register(message):
                 token = return_login['data']['token']
                 bot.send_message(chat_id,
                                  f"Login: https://cc24.live?token={token}")
-                caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @K_C24  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
+                caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @KC999_CS  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
                 bot.send_photo(chat_id, photo=IMAGE_URL, caption=caption)
 
 
@@ -161,7 +161,7 @@ def send_contact_info(message):
     chat_id = message.chat.id  # Get the chat ID to send the message directly
 
     # Caption for the photo
-    caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @K_C24  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
+    caption = "សំរាប់ចម្ងល់ឬបញ្ហាផ្សេងៗ នឹង ដាក់/ដក ប្រាក់ ចុចទីនេះ 👉🏻 @KC999_CS  បញ្ជាក់៖ នេះជាម៉ាសុីនសម្រាប់តែបង្កើតអាខោន មិនចេះឆ្លើយតបទេ។ សូមអរគុណ!"
 
     # Send the photo with the caption
     bot.send_photo(chat_id, photo=IMAGE_URL, caption=caption)
